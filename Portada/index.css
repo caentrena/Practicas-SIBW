@@ -5,7 +5,7 @@ div aside {
 	display: inline;
 }
 
-/* todos los p dentro de un aside que estñ dentro de un div */
+/* todos los p dentro de un aside que estÃ± dentro de un div */
 div aside p {
 	display: inline;
 }
@@ -40,11 +40,9 @@ i {
 
 /* div con un texto centrado */
 .centrado {
-	position: absolute;
-	left: 0;
-	top: 40%;
-	width: 100%;
-	text-align: center;
+	width: 80%;
+    margin: auto;
+    padding: 3% 0%;
 }
 
 /* a con el enlaca de la noticia */
@@ -73,7 +71,7 @@ i {
 	padding: 5px;
 }
 
-/* a con la ñltima noticia relacionada con otra noticia */
+/* a con la Ã±ltima noticia relacionada con otra noticia */
 .ultimo_relacionado {
 	border-right: none!important;
 }
@@ -153,31 +151,39 @@ nav {
 	border-bottom: solid 1px #C9C9C9;
 	background: #f0edec;
 	height: 46px;
+    margin-bottom: 1%;
 }
 
-/* cada aside de la barra de navegaciñn */
+/* cada aside de la barra de navegaciÃ±n */
 nav aside {
 	display: inline;
 }
 
-/* cada enlace de la barra de navegaciñn */
-nav a {
-	padding: 15px 12px;
-	text-decoration: none;
+/* cada enlace de la barra de navegaciÃ±n */
+nav li {
+	padding: 15px 10px;
 	display: inline-block;
 	color: #000;
 	font-family: "Clear Sans",Arial,sans-serif,helvetica;
 	text-transform: uppercase;
 }
 
+nav li a {
+    text-decoration: none;
+    color: black;
+}
+
 /* FIN BARRA NAVEGACION */
 
 /* NOTICIA IMPORTANTE */
 
+.contenedor_noticia_importante {
+    margin-bottom: 1%;
+}
+
 /* article con la noticia importante */
 #noticia_importante {
 	min-height: 33.503%;
-	position: relative;
 }
 
 /* a con el enlace de la noticia importante */
@@ -196,7 +202,7 @@ nav a {
 
 /* NOTICIA DESTACADA */
 
-/* div con todo el bloque que engloba la noticia destacada y las que le acompañan */
+/* div con todo el bloque que engloba la noticia destacada y las que le acompaÃ±an */
 #bloque_noticia_destacada {
 	margin-top: 5px;
 }
@@ -238,9 +244,9 @@ nav a {
 
 /* FIN NOTICIA DESTACADA */
 
-/* NOTICIAS ACOMPAÑAN NOTICIA DESTACADA */
+/* NOTICIAS ACOMPAÃ‘AN NOTICIA DESTACADA */
 
-/* div con el resto de noticias que acompañan a la noticia destacada */
+/* div con el resto de noticias que acompaÃ±an a la noticia destacada */
 #bloque_noticias {
 	float: right;
 	width: 45%;
@@ -265,13 +271,13 @@ nav a {
 	color: #000;
 }
 
-/* img de la noticia con foto dentro del article que acompaña a la noticia destacada */
-#noticias_acompañan_noticia_destacada article img {
+/* img de la noticia con foto dentro del article que acompaÃ±a a la noticia destacada */
+#noticias_acompaÃ±an_noticia_destacada article img {
 	width: 100%;
 	height: 48.695%;
 }
 
-/* div que contiene la noticia con foto normal que acompaña a la noticia destacada */
+/* div que contiene la noticia con foto normal que acompaÃ±a a la noticia destacada */
 #noticia_con_foto_normal {
 	margin-top: 5px;
 }
@@ -298,9 +304,13 @@ nav a {
 	font-size: 1.8em;
 }
 
-/* FIN NOTICIAS ACOMPAñAN NOTICIA DESTACADA */
+/* FIN NOTICIAS ACOMPAÃ±AN NOTICIA DESTACADA */
 
 /* NOTICIA CON FOTO PRINCIPAL */
+
+.bloque_noticias_inferior {
+    margin-top: 1%;
+}
 
 /* article que contiene la noticia con foto principal */
 .noticia_con_foto_principal {
@@ -344,7 +354,7 @@ nav a {
 	margin-right: 5px;
 }
 
-/* article que contiene la ñltima noticia con foto secundaria */
+/* article que contiene la Ã±ltima noticia con foto secundaria */
 .ultima_noticia_con_foto {
 	width: 30.008%;
 	display: inline-block;
