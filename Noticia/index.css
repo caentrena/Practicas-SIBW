@@ -429,6 +429,7 @@ div.contenedor_categoria_noticia {
 
 div.bloque_noticia_completa {
 	margin: 0 10%;
+    display: inline-block;
 }
 
 /* BLOQUE TITULO NOTICIA */
@@ -552,4 +553,122 @@ article.cuerpo_noticia {
 
 .bloque_seccion_noticia {
     color: #03a3d8;
+}
+
+/* COMENTARIO NOTICIA */
+#bloque_comentarios {
+    height: 100%;
+    width: 0%; /* 0 de ancho - cambiará con Javascript */
+    position: fixed; /* Siempre permanece en el mismo sitio */
+    z-index: 1; /* Permanece en lo alto */
+    bottom: 0;
+    right: 0;
+    background-color: ghostwhite;
+    overflow-x: hidden; /* Desactivamos el scroll horizontal */
+    transition: 0.8s;
+    border: solid 1px #808080;
+}
+
+#bloque_comentarios .closebtn {
+    position: absolute;
+    top: -18px;
+    left: 7px;
+    font-size: 60px;
+    margin-left: 0;
+    text-decoration: none;
+    color: #03a3d8;
+}
+
+#contenedor_comentarios {
+    padding: 2%;
+    border-bottom: solid 1px #808080;
+}
+
+.comentario {
+    border-top: solid 1px #03a3d8;
+    border-bottom: solid 1px #03a3d8;
+    padding-top: 2%;
+    margin: 3% 0%;
+}
+
+.comentario span {
+    font-family: "robotoBold",Arial,helvetica;
+    font-size: 17px;
+}
+
+.fecha_comentario {
+    border-right: solid 2px #808080;
+    padding-right: 1%;
+    font-family: "robotoRegular",Arial,sans-serif,helvetica;
+    font-size: 11px;
+}
+
+.hora_comentario {
+    font-size: 11px;
+    font-family: "robotoRegular",Arial,sans-serif,helvetica;
+}
+
+.texto_comentario {
+    padding: 1%;
+    font-size: 20px;
+}
+/* FORMULARIO COMENTARIO NOTICIA */
+
+#formulario_comentarios {
+    padding: 3% 3%;
+}
+
+#formulario_comentarios textarea {
+    margin-top: 3%;
+}
+
+#datos_comentario {
+    width: 70%;
+    float: left;
+    /*padding: 3% 3%;*/
+}
+
+#boton_comentario {
+    width: 30%;
+    float: right;
+}
+
+#boton_comentario button {
+    margin-top: 15%;
+    background-color: #03a3d8; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+}
+#bloque_boton_ver_comentarios {
+    width: 19%;
+    margin:auto;
+}
+
+#boton_ver_comentarios {
+    background-color: #03a3d8;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+@media screen and (max-height: 450px) {
+    #bloque_comentarios {padding-top: 15px;}
+    #bloque_comentarios div {font-size: 18px;}
+}
+
+a {
+    color:black;
 }
