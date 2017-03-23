@@ -22,15 +22,18 @@
     <script src="funciones.js"></script>
 </head>
 
-<body>
+<body onload="actualizarHora()">
 <header>
 
-	<aside id="fecha_header">
-		<p>7 de Marzo de 2017</p>
-	</aside>
-	<aside id="hora_actualizado_header">
-		Actualizado a las 17:30
-	</aside>
+    <div id="contenedor_fecha">
+        <span id="fecha_header">
+            7 de Marzo de 2017
+        </span>
+        <span id="hora_actualizado_header">
+            Actualizado a las 17:30
+        </span>
+    </div>
+	
 	<img id="logo_header" src="logo.png" alt="LOGO">
 	<aside id="botones_header">
 		<button type="button" id="boton_suscribete_header">SUSCRIBETE</button>

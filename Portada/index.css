@@ -1,5 +1,15 @@
 /* GENERAL */
 
+#contenedor_fecha {
+    display: inline-block;
+    width: 15%;
+    margin-right: 5%;
+    position: relative;
+    bottom: 28%;
+    left: 2%;
+    font-family: sans-serif;
+}
+
 /* todos los aside dentro de un div */
 div aside {
 	display: inline;
@@ -124,13 +134,6 @@ header button {
     margin-left: 1.5%;
     margin-top: 1.5%;
     display: inline;
-}
-
-/* aside que contiene la fecha en la que se ha actualizado la portada */
-#hora_actualizado_header{
-	position: relative;
-    bottom: 25px;
-    right: 127.97px;
 }
 
 /* logo del header */
