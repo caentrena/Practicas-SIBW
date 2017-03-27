@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
     <!-- CODIFICACIÓN USADA -->
@@ -23,25 +24,27 @@
 </head>
 
 <body onload="actualizarHora()">
+    
 <header>
 
-    <div id="contenedor_fecha">
-        <span id="fecha_header">
-            7 de Marzo de 2017
-        </span>
-        <span id="hora_actualizado_header">
-            Actualizado a las 17:30
-        </span>
+    <div class="cont_fecha_header">
+        <span id="fecha">7 de Marzo de 2017</span>
+        <span id="hora_actualizado">Actualizado a las 17:30</span>
     </div>
 	
-	<img id="logo_header" src="logo.png" alt="LOGO">
-	<aside id="botones_header">
+    <div class="cont_logo_header">
+	   <img id="logo" src="logo.png" alt="LOGO">
+    </div>
+    
+    <div class="cont_botones_header">
 		<button type="button" id="boton_suscribete_header">SUSCRIBETE</button>
 		<button type="button" id="boton_inicio_header">INICIO SESION</button>
-	</aside>
-	
+    </div>
+    
 </header>
+
 <nav>
+    
     <li><a href="../Noticia/noticia.html">españa</a></li> |
     <li><a href="../Noticia/noticia.html">internacional</a></li> |
     <li><a href="../Noticia/noticia.html">deportes</a></li> |
@@ -52,287 +55,209 @@
     <li><a href="../Noticia/noticia.html">opinion</a></li> |
     <li><a href="../Noticia/noticia.html">cultura</a></li> |
     <li><a href="../Noticia/noticia.html">moda</a></li> |
-	<aside>
-        <li><i class="fa fa-facebook"></i></li>
-        <li><i class="fa fa-twitter"></i></li>
-        <li><i class="fa fa-google-plus"></i></li>
-	</aside>
+    
+	<section class="redes_sociales">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-google-plus"></i>
+	</section>
 	
 </nav>
-<article class="contenedor_noticia_importante">
-
-<!-- NOTICIA IMPORTANTE -->
-
-	<section id="noticia_importante">
-        <img src="foto_noticia_importante.png" alt="foto_noticia_importante" height="80%" width="100%">
-		<div class="centrado">
-			<a class="enlace_noticia" href="../Noticia/noticia.html">TRUMP ELEGIDO PRESIDENTE DE EE.UU</a>
-		</div>
-	</section>
-	<div class="pie">
-		<aside class="autor">
-			<p>Diego Plaza</p>
-		</aside>
-		<aside>
-			<p>Washington, EE.UU</p>
-		</aside>
-	</div>
-	<div class="relacionadas_noticia">
-		<aside>
-			<a href="../Noticia/noticia.html">· Donald Trump es acusado de xenofobia</a>
-		</aside>
-		<aside>
-			<a href="../Noticia/noticia.html">· Donald Trump aumenta su patrimonio en un 3%</a>
-		</aside>
-		<aside class="ultimo_relacionado">
-			<a href="../Noticia/noticia.html">· Donal Trump planea construir un gran muro que separe EE.UU de México</a>
-		</aside>
-	</div>
-	
-</article>
-<div id="bloque_noticia_destacada">
-	<div id="noticia_destacada">
-		<section>
-
-			<!-- NOTICIA DESTACADA -->
-
-			<section>
-			
-				<!-- FOTOGRAFIA NOTICIA DESTACADA -->
-				
-				<img src="foto_noticia_destacada.png" alt="FOTO NOTICIA DESTACADA">
-				<div class="pie">
-					<aside class="autor">
-						<p>Descripción fotografia</p>
-					</aside>
-					<aside>
-						<p>Lugar</p>
-					</aside>
-				</div>
-			</section>
-			<section>
-
-				<!-- NOTICIA -->
-				
-				<div>
-					<section id="texto_noticia_destacada">
-						<div>
-							<a class="enlace_noticia" href="../Noticia/noticia.html">Asia salva de la opacidad al mercado del arte, que huye de las subastas</a>
-						</div>
-					</section>
-					<div class="pie">
-						<aside class="autor">
-							<p>Imane Rachidi</p>
-						</aside>
-						<aside>
-							<p>La Haya</p>
-						</aside>
-					</div>
-				</div>
-				<div id="entradilla_noticia_destacada">
-					<aside id="texto_entradilla_noticia_destacada">
-						<p>La venta de obras movió en 2016 45.000 millones de dólares, de los que el 70% correspondieron a transacciones fuera de las casas de subastas.</p>
-					</aside>
-					<div id="relacionadas_noticia_destacada">
-						<div class="relacionadas_noticia">
-							<aside>
-								<a href="../Noticia/noticia.html">· NOTICIA RELACIONADA 1</a>
-							</aside>
-							<aside class="ultimo_relacionado">
-								<a href="../Noticia/noticia.html">· NOTICIA RELACIONADA 2</a>
-							</aside>
-						</div>
-						<div class="relacionadas_noticia">
-							<aside>
-								<a href="../Noticia/noticia.html">· NOTICIA RELACIONADA 3</a>
-							</aside>
-							<aside class="ultimo_relacionado">
-								<a href="../Noticia/noticia.html">· NOTICIA RELACIONADA 4</a>
-							</aside>
-						</div>
-					</div>
-				</div>
-				
-			</section>
-
-			<!-- FIN NOTICIA DESTACADA -->
-			
-		</section>
-	</div>
-	<div id="bloque_noticias">
-		<section>
-
-			<!-- NOTICIA NORMAL -->
-			<div id="texto_noticia_normal">
-				<a href="../Noticia/noticia.html"> Israel despenaliza la marihuana</a>
-			</div>
-			<div class="pie">
-				<aside class="autor">
-					<p>Sal Emergui</p>
-				</aside>
-				<aside>
-					<p>Tel Aviv</p>
-				</aside>
-			</div>
-			<div class="relacionadas_noticia">
-				<aside class="ultimo_relacionado">
-					<a href="../Noticia/noticia.html">· Israel repartirá marihuana entre sus habitantes</a>
-				</aside>
-			</div>
-			
-		</section>
-		<section id="noticia_con_foto_normal">
-
-			<!-- NOTICIA CON FOTO INDIVIDUAL -->
-				
-			<img src="foto_noticia_con_foto_individual.png" alt="FOTO NOTICIA 2">
-							
-			<section>
-				<div id="texto_noticia_con_foto_normal">
-					<a href="../Noticia/noticia.html">Los 'nuevos' amigos de Benzema..."!Menudos suplentes¡"</a>
-				</div>
-				<div class="pie">
-					<aside class="autor">
-						<p>Jaime Rodriguez</p>
-					</aside>
-					<aside>
-						<p>Eibar</p>
-					</aside>
-				</div>
-			</section>
-
-		</section>
-	</div>
+    
+<div id="cuerpo_noticias">
+    <article class="cont_noticia_importante">
+        
+        <section class="foto_noticia_importante">
+            <img src="trump.png" alt="foto_noticia_importante" width="100%" height="440px">
+        </section>
+        
+        <section class="titulo_noticia_importante">
+            <a href="../Noticia/noticia.html">Trump elegido presidente de EE.UU</a>
+        </section>
+        
+        <footer>
+            <span class="autor">Diego Plaza</span>
+            <span>Washington, EEUU</span>
+        </footer>
+        
+        <section class="noticias_relacionadas">
+            <span><a href="../Noticia/noticia.html">· Donald Trump es acusado de homofobia</a></span>
+            <span><a href="../Noticia/noticia.html">· Donald Trump aumenta su patrimonio en un 3%</a></span>
+            <span class="ultima_relacionada"><a href="../Noticia/noticia.html">· Donald Trump planea da su primera rueda de prensa</a></span>
+        </section>
+        
+    </article>
+    
+    <article class="cont_noticia_destacada">
+        
+        <section class="foto_noticia">
+            <img src="foto_noticia_destacada.png" alt="foto noticia destacada" width="100%" height="300px">
+        </section>
+        
+        <footer>
+            <span class="autor">Descripción fotografia</span>
+            <span>lugar</span>
+        </footer>
+        
+        <section class="titulo_noticia_destacada">
+            <a href="../Noticia/noticia.html">Asia salva de la opacidad al mercado del arte, que huye de las subastas</a>
+        </section>
+        
+        <footer>
+            <span class="autor">Imane Rachidi</span>
+            <span>La Haya</span>
+        </footer>
+        
+        <section class="entradilla">
+            La venta de obras movió en 2016 45.000 millones de dólares, de los que el 70% correspondieron a transacciones fuera de las casas de subastas.
+        </section>
+        
+        <section class="noticias_relacionadas relacionadas_destacadas">
+            <span><a href="../Noticia/noticia.html">· Noticia relacionada 1</a></span>
+            <span><a href="../Noticia/noticia.html">· Noticia relacionada 2</a></span>
+            <span class="ultima_relacionadaa"><a href="../Noticia/noticia.html">· Noticia relacionada 3</a></span>
+        </section>
+        
+    </article>
+    
+    <article class="cont_noticia_normal">
+        
+        <section class="titulo_noticia sola">
+            <a href="../Noticia/noticia.html">Israel despenaliza la marihuana</a>
+        </section>
+        
+        <footer>
+            <span class="autor">Sal Emergui</span>
+            <span>Tel Aviv</span>
+        </footer>
+        
+        <section class="noticias_relacionadas">
+            <span><a href="../Noticia/noticia.html">· Israel repartirá marihuana entre sus habitantes</a></span>
+        </section>
+        
+    </article>
+    
+    <article class="cont_noticia_normal">
+        
+        <section class="foto_noticia">
+            <img src="foto_noticia_con_foto_individual.png" width="100%" height="250px" alt="foto de la noticia">
+        </section>
+        
+        <section class="titulo_noticia">
+            <a href="../Noticia/noticia.html">Los 'nuevos' amigos de Benzema..."!Menudos suplentes¡"</a>
+        </section>
+        
+        <footer>
+            <span class="autor">Jaime Rodriguez</span>
+            <span>Eibar</span>
+        </footer>
+        
+    </article>
+        
+    <article class="cont_noticia_principal">
+    
+        <section class="foto_noticia">
+            <img src="foto_noticia_con_foto_principal1.png" width="100%" height="200px" alt="foto de la noticia">
+        </section>
+        
+        <footer>
+            <span class="autor">Enric Gonzalez</span>
+            <span>París</span>
+        </footer>
+        
+        <section class="titulo_noticia inferior">
+            <a href="../Noticia/noticia.html">Fillo declara la guerra a su partido: "Nadie tiene derecho a arrebetarme la candidatura"</a>
+        </section>
+        
+    </article>
+    
+    <article class="cont_noticia_secundaria">
+        
+        <section class="foto_noticia">
+            <img src="foto_noticia_con_foto_en_grupo1.png" width="100%" height="200px">
+        </section>
+        
+        <footer>
+            <span class="autor">Eduardo J. Castelao</span>
+            <span>Madrid</span>
+        </footer>
+        
+        <section class="titulo_noticia inferior">
+            <a href="../Noticia/noticia.html">Tarde plácida para el Atlético, con Torres en el palco del Calderón</a>
+        </section>
+        
+    </article>
+    
+    <article class="cont_noticia_secundaria">
+        
+        <section class="foto_noticia">
+            <img src="foto_noticia_con_foto_en_grupo2.png" width="100%" height="200px">
+        </section>
+        
+        <footer>
+            <span class="autor">Juan Perez</span>
+            <span>EFE</span>
+        </footer>
+        
+        <section class="titulo_noticia inferior">
+            <a href="../Noticia/noticia.html">Perros abandonados, recogepelotas en el torneo de Sao Paulo</a>
+        </section>
+        
+    </article>
+        
+    <article class="cont_noticia_principal clear">
+    
+        <section class="foto_noticia">
+            <img src="foto_noticia_con_foto_principal2.png" width="100%" height="200px" alt="foto de la noticia">
+        </section>
+        
+        <footer>
+            <span class="autor">Agencias</span>
+            <span>Murcia</span>
+        </footer>
+        
+        <section class="titulo_noticia inferior">
+            <a href="../Noticia/noticia.html">Miles de personas en Murcia "contra la corrupción" exigen la dimisión de Sánchez</a>
+        </section>
+        
+    </article>
+    
+    <article class="cont_noticia_secundaria">
+        
+        <section class="foto_noticia">
+            <img src="foto_noticia_con_foto_en_grupo3.png" width="100%" height="200px">
+        </section>
+        
+        <footer>
+            <span class="autor">Daniel Lozano</span>
+            <span>Diego Santander</span>
+        </footer>
+        
+        <section class="titulo_noticia inferior">
+            <a href="../Noticia/noticia.html">Las revoluciones, contra "el plan de supremacía blanca e imperial"</a>
+        </section>
+        
+    </article>
+    
+    <article class="cont_noticia_secundaria">
+        
+        <section class="foto_noticia">
+            <img src="foto_noticia_con_foto_en_grupo4.png" width="100%" height="200px">
+        </section>
+        
+        <footer>
+            <span class="autor"></span>
+            <span>El Mundo</span>
+        </footer>
+        
+        <section class="titulo_noticia inferior">
+            <a href="../Noticia/noticia.html">Facebook espía tus reacciones a los posts de tu muro</a>
+        </section>
+        
+    </article>
+        
 </div>
-<div class="bloque_noticias_inferior">
-	<article class="noticia_con_foto_principal">
-
-		<!-- NOTICIA CON FOTO PRINCIPAL-->
-	
-		<img class="foto_noticia_con_foto" src="foto_noticia_con_foto_principal1.png" alt="FOTO NOTICIA 1">
-		<section>
-			<div class="texto_noticia_con_foto">
-				<a href="../Noticia/noticia.html">Fillon declara la guerra a su partido: "Nadie tiene derecho a arrebatarme la candidatura"</a>
-			</div>
-			<div class="pie">
-				<aside class="autor">
-					<p>Enric Gonzalez</p>
-				</aside>
-				<aside>
-					<p>París</p>
-				</aside>
-			</div>
-		</section>
-		
-	</article>
-	<article class="noticia_con_foto_secundaria">
-
-		<!-- NOTICIA CON FOTO EN GRUPO-->
-
-		<img class="foto_noticia_con_foto" src="foto_noticia_con_foto_en_grupo1.png" alt="FOTO NOTICIA 2">
-
-		<section>
-			<div class="texto_noticia_con_foto">
-				<a href="../Noticia/noticia.html">Tarde plácida para el Atlético, con Torres en el palco del Calderón</a>
-			</div>
-			<div class="pie">
-				<aside class="autor">
-					<p>Eduardo J. Castelao</p>
-				</aside>
-				<aside>
-					<p>Madrid</p>
-				</aside>
-			</div>
-		</section>
-
-	</article>
-	<article class="ultima_noticia_con_foto">
-
-		<!-- NOTICIA CON FOTO EN GRUPO-->
-
-		<img class="ultima_foto_noticia_con_foto" src="foto_noticia_con_foto_en_grupo2.png" alt="FOTO NOTICIA 3">
-
-		<section>
-			<div class="texto_noticia_con_foto">
-				<a href="../Noticia/noticia.html">Perros abandonados, recogepelotas en el torneo de Sao Paulo</a>
-			</div>
-			<div class="pie">
-				<aside class="autor">
-					<p>Juan Perez</p>
-				</aside>
-				<aside>
-					<p>EFE</p>
-				</aside>
-			</div>
-		</section>
-
-	</article>
-</div>
-<div class="bloque_noticias_inferior">
-	<article class="noticia_con_foto_principal">
-
-		<!-- NOTICIA CON FOTO PRINCIPAL-->
-	
-		<img class="foto_noticia_con_foto" src="foto_noticia_con_foto_principal2.png" alt="FOTO NOTICIA 1">
-		<section>
-			<div class="texto_noticia_con_foto">
-				<a href="../Noticia/noticia.html">Miles de personas en Murcia "contra la corrupción" exigen la dimisión de Sánchez</a>
-			</div>
-			<div class="pie">
-				<aside class="autor">
-					<p>Agencias</p>
-				</aside>
-				<aside>
-					<p>Murcia</p>
-				</aside>
-			</div>
-		</section>
-		
-	</article>
-	<article class="noticia_con_foto_secundaria">
-
-		<!-- NOTICIA CON FOTO EN GRUPO-->
-
-		<img class="foto_noticia_con_foto" src="foto_noticia_con_foto_en_grupo3.png" alt="FOTO NOTICIA 2">
-
-		<section>
-			<div class="texto_noticia_con_foto">
-				<a href="../Noticia/noticia.html">Las revoluciones, contra "el plan de supremacía blanca e imperial"</a>
-			</div>
-			<div class="pie">
-				<aside class="autor">
-					<p>Daniel Lozano</p>
-				</aside>
-				<aside>
-					<p>Diego Santander</p>
-				</aside>
-			</div>
-		</section>
-
-	</article>
-	<article class="ultima_noticia_con_foto">
-
-		<!-- NOTICIA CON FOTO EN GRUPO-->
-
-		<img class="foto_noticia_con_foto" src="foto_noticia_con_foto_en_grupo4.png" alt="FOTO NOTICIA 3">
-
-		<section>
-			<div class="texto_noticia_con_foto">
-				<a href="../Noticia/noticia.html">Facebook espía tus reacciones a los posts de tu muro</a>
-			</div>
-			<div class="pie">
-				<aside class="autor">
-					<p>El Mundo</p>
-				</aside>
-				<aside>
-					<p></p>
-				</aside>
-			</div>
-		</section>
-
-	</article>
-</div>
-
+    
 </body>
 
 </html>

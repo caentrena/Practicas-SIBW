@@ -110,5 +110,5 @@ function actualizarHora() {
     
     x = dia + " de " + mes + " de " + anio;
     
-    document.getElementById("fecha_header").innerHTML = x;
+    document.getElementById("fecha").innerHTML = x;
 }

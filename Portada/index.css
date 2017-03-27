@@ -1,154 +1,104 @@
-/* GENERAL */
+/* REMODELACIÓN */
 
-#contenedor_fecha {
-    display: inline-block;
-    width: 15%;
-    margin-right: 5%;
-    position: relative;
-    bottom: 28%;
-    left: 2%;
-    font-family: sans-serif;
+footer {
+    margin: 1% 0%;
+    text-transform: capitalize;
 }
 
-/* todos los aside dentro de un div */
-div aside {
-	display: inline;
-}
-
-/* todos los p dentro de un aside que estñ dentro de un div */
-div aside p {
-	display: inline;
-}
-
-i {
-	margin: 0 0.5256%;
-}
-
-/* FIN GENERAL */
-
-/* CLASES */
 .autor {
-	font-size: 0.9em!important;
-	border-right: solid 2px #C9C9C9;
-	margin-left: 0!important;
-	text-transform: uppercase;
+    border-right: solid 1px #C9C9C9;
+    padding-right: 1%;
 }
 
-/* pie de noticia o de foto */
-.pie {
-	font-size: 0.8em;
-	min-height: 20px;
-	text-transform: capitalize;
-	padding: 5px;
+.noticias_relacionadas {
+    padding: 1% 0%;
+    border-top: solid 1px #C9C9C9;
+    border-bottom: solid 1px #c9c9c9;
+    margin-bottom: 1%;
 }
 
-/* aside del pie con el contenido */
-.pie aside {
-	margin-left: 5px;
-	margin-bottom: 5px;
+.noticias_relacionadas span {
+    border-right: solid 1px #C9C9C9;
+    padding-right: 1%;
 }
 
-/* div con un texto centrado */
-.centrado {
-	width: 80%;
-    margin: auto;
-    padding: 3% 0%;
+.ultima_relacionada {
+    border-right: none!important;
 }
 
-/* a con el enlaca de la noticia */
-.enlace_noticia {
-	text-decoration: none;
-	color: #000;
-	text-transform: uppercase;
+.foto_noticia {
+    margin-top: 4%;
 }
 
-/* div con las noticias relacionadas */
-.relacionadas_noticia {
-	border-top: solid 1px #C9C9C9;
-	border-bottom: solid 1px #C9C9C9;
-	padding: 5px 0px;
+.sola {
+    padding: 8% 0%;
 }
 
-/* aside con cada una de las noticias relacionadas con otra noticia */
-.relacionadas_noticia aside {
-	border-right: solid 2px #C9C9C9;
+.inferior {
+    font-size: 1em!important;
 }
 
-/* a dentro de un aside dentro de un div con las noticias relacionadas con otra noticia */
-.relacionadas_noticia aside a {
-	text-decoration: none;
-	color: #2e6d9d;
-	padding: 5px;
+.clear {
+    clear: left;
+    margin-top: 1.5%!important;
 }
-
-/* a con la ñltima noticia relacionada con otra noticia */
-.ultimo_relacionado {
-	border-right: none!important;
-}
-
-/* FIN CLASES */
 
 /* HEADER */
+
 header {
-	height: 80px;
+    height: 80px;
+    margin-bottom: 0.4%; /* Añadido para que se vea todo el contenido del nav */
 }
 
-header aside {
-	display: inline;
+.cont_fecha_header {
+    float: left; /* El contenedor flotará a la izq */
+    display: grid; /* Los dos span que contiene (fecha de hoy y hora de actualización) se encuentran uno encima del otro */
+    position: relative; /* Lo moveremos a otra posición relativa */
+    top: 30%; /* Lo centraremos en el eje y */
+    margin-left: 1%;
 }
 
-/* formato general para todos los button del header */
+.cont_logo_header {
+    width: 25%;
+    margin: auto; /* Con esto + el width conseguimos que el logo se centre */
+    position: relative;
+    top: 25%; /* Lo centraremos en el eje y */
+}
+
+.cont_botones_header {
+    float: right;
+    position: relative;
+    bottom: 25%; /* Lo centramos en el eje y */
+    margin-right: 1%;
+    width: 19%; /* Le ponemos el ancho justo para que quepan los dos botones (el de inicio de sesión y el de suscribirse)*/
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+    
+/* Botones inicio sesion y suscribete */
 header button {
-	border: none;
-	padding: 5.5%;
-	display: inline-block;
-	border-radius: 2px;
+    border: none; /* No tendrán borde */
+    padding: 5.5%;
+    border-radius: 2px; /* El borde será redondo */
 }
 
-/* aside que contiene los dos botones del header */
-#botones_header {
-	display: inline;
-	float: right;
-	margin-top: 1.501%;
-	margin-right: 0.751%;
-	width: 250px;
-}
-
-/* boton suscribete del header */
 #boton_suscribete_header {
-	background-color: #2e6d9d;
-	color: #fff;
+    background-color: #2e6d9d;
+    color: #fff;
 }
 
-/* boton inicio sesion del header */
 #boton_inicio_header {
-	background-color: white;
-	color: #49a3db;
-	margin-left: 5px;
-	float: right;
-}
-
-/* aside que contiene la fecha en el header */
-#fecha_header p{
-	float: left;
-    margin-left: 1.5%;
-    margin-top: 1.5%;
-    display: inline;
-}
-
-/* logo del header */
-#logo_header {
-	height: 60px;
-	width: 350px;
-	margin-top: 0.75%;
-    margin-bottom: 0.75%;
-    margin-left: 14%;
-    display: inline;
+    background-color: white;
+    color: #49a3db;
 }
 
 /* FIN HEADER */
 
 /* BARRA DE NAVEGACION */
+
 nav {
 	border-top: solid 1px #C9C9C9;
 	border-bottom: solid 1px #C9C9C9;
@@ -157,216 +107,105 @@ nav {
     margin-bottom: 1%;
 }
 
-/* cada aside de la barra de navegaciñn */
-nav aside {
-	display: inline;
-}
-
-/* cada enlace de la barra de navegaciñn */
 nav li {
 	padding: 15px 10px;
 	display: inline-block;
-	color: #000;
 	font-family: "Clear Sans",Arial,sans-serif,helvetica;
 	text-transform: uppercase;
+    height: 34%; /* Para que al ponernos encima no pisemos el borde inferior */
 }
 
-nav li a {
-    text-decoration: none;
-    color: black;
+nav li:hover {
+    background-color: #E5E3E3;
+}
+
+nav li a:hover {
+    color: #2e6d9d;
+}
+
+.redes_sociales {
+    display: inline;
+    margin-left: 1%;
 }
 
 /* FIN BARRA NAVEGACION */
 
-/* NOTICIA IMPORTANTE */
-
-.contenedor_noticia_importante {
-    margin-bottom: 1%;
+#cuerpo_noticias {
+    width: 90%;
+    margin: auto;
 }
 
-/* article con la noticia importante */
-#noticia_importante {
-	min-height: 33.503%;
+/* NOTICIA IMPORTANTE (MÁS GRANDE) */
+
+.cont_noticia_importante {
+    width: 86%; /* Sólo ocupará un porcentaje del total que ocupan todas las noticias */
+    margin-bottom: 1%; /* Separación con el siguiente bloque de noticias */
+    margin: auto; /* todo el contenido estará centrado */
 }
 
-/* a con el enlace de la noticia importante */
-#noticia_importante a {
-	font-size: 3em;
-}
-
-/* div con las noticias relacionadas */
-#relacionadas_noticia_importante {
-	border-top: solid 1px #C9C9C9;
-	border-bottom: solid 1px #C9C9C9;
-	padding: 5px 0px;
+.titulo_noticia_importante {
+    font-size: 3em;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 4% 0%;
 }
 
 /* FIN NOTICIA IMPORTANTE */
 
-/* NOTICIA DESTACADA */
+/* NOTICIA DESTACADA (BLOQUE MÁS ANCHO, NOTICIA IZQ) */
 
-/* div con todo el bloque que engloba la noticia destacada y las que le acompañan */
-#bloque_noticia_destacada {
-	margin-top: 5px;
+.cont_noticia_destacada {
+    float: left;
+    width: 50%;
 }
 
-/* div con toda la noticia destacada */
-#noticia_destacada {
-	width: 45.012%;
-	display: inline-block;
+.titulo_noticia_destacada {
+    font-size: 2em;
 }
 
-/* imagen de la noticia destacada */
-#noticia_destacada img {
-	display: block;
-	height: 60%;
-	width: 100%;
+.entradilla {
+    font-size: 1em;
+    font-family: sans-serif;
+    padding: 3% 0% 3% 3%;
 }
 
-/* article con el texto de la noticia destacada */
-#texto_noticia_destacada {
-	min-height: 15.48%;
-	font-size: 1.8em;
-}
-
-/* div con la entradilla de la noticia destacada */
-#entradilla_noticia_destacada {
-	width: 90%;
-}
-
-/* aside con el texto de la noticia destacada */
-#texto_entradilla_noticia_destacada {
-	display: block;
-	min-height: 7.74%;
-	padding: 10px;
-}
-
-#relacionadas_noticia_destacada div aside {
-	display: inline;
+.relacionadas_destacadas {
+    text-indent: 2%;
 }
 
 /* FIN NOTICIA DESTACADA */
 
-/* NOTICIAS ACOMPAÑAN NOTICIA DESTACADA */
+/* NOTICIA NORMAL (CON FOTO O SIN FOTO) */
 
-/* div con el resto de noticias que acompañan a la noticia destacada */
-#bloque_noticias {
-	float: right;
-	width: 45%;
-	/*height: 105%;*/
+.cont_noticia_normal {
+    width: 49%;
+    margin-left: 1%;
+    float: right;
 }
 
-/* div con el texto de la noticia normal */
-#texto_noticia_normal {
-	height: 20.063%;
-	position: relative;
+.titulo_noticia {
+    font-size: 2em;
+    text-align: center;
 }
 
-/* p con el texto de la noticia normal */
-#texto_noticia_normal a {
-	font-size: 2em;
-	position: absolute;
-	left: 0;
-	top: 30%;
-	width: 100%;
-	text-align: center;
-	text-decoration: none;
-	color: #000;
+/* FIN NOTICIA NORMAL */
+
+
+/* BLOQUE NOTICIAS INFERIORES */
+
+.cont_noticia_principal {
+    width: 35%;
+    margin-left: 3%;
+    display: inline-block;
+    float: left;
+    margin-top: 2.25%;
 }
 
-/* img de la noticia con foto dentro del article que acompaña a la noticia destacada */
-#noticias_acompañan_noticia_destacada article img {
-	width: 100%;
-	height: 48.695%;
-}
-
-/* div que contiene la noticia con foto normal que acompaña a la noticia destacada */
-#noticia_con_foto_normal {
-	margin-top: 5px;
-}
-
-#noticia_con_foto_normal img {
-	width: 100%;
-}
-
-/* div de la noticia con foto normal */
-#texto_noticia_con_foto_normal {
-	position: relative;
-	height: 16.063%;
-}
-
-/* a con el enlace de la noticia con foto normal */
-#noticia_con_foto_normal a {
-	position: absolute;
-	left: 0;
-	width: 100%;
-	top: 17%;
-	text-align: center;
-	text-decoration: none;
-	color: #000;
-	font-size: 1.8em;
-}
-
-/* FIN NOTICIAS ACOMPAñAN NOTICIA DESTACADA */
-
-/* NOTICIA CON FOTO PRINCIPAL */
-
-.bloque_noticias_inferior {
-    margin-top: 1%;
-}
-
-/* article que contiene la noticia con foto principal */
-.noticia_con_foto_principal {
-	width: 37.51%;
-	display: inline-block;
-	float: left;
-	margin-top: 5px;
-	margin-right: 5px;
-}
-
-/* img con la foto de la noticia con foto principal */
-.foto_noticia_con_foto {
-	width: 100%;
-	height: 38.7%;
-}
-
-/* div con el texto de la noticia con foto principal */
-.texto_noticia_con_foto {
-	height: 15.48%;
-	position: relative;
-}
-
-/* enlace de la noticia con foto principal */
-.texto_noticia_con_foto a {
-	font-size: 1.5em;
-	position: absolute;
-	left: 0;
-	top: 23%;
-	width: 100%;
-	text-align: center;
-	text-decoration: none;
-	color: #000;
-}
-
-/* article que contiene la noticia con foto secundaria */
-.noticia_con_foto_secundaria {
-	width: 30.008%;
-	display: inline-block;
-	float: left;
-	margin-top: 5px;
-	margin-right: 5px;
-}
-
-/* article que contiene la ñltima noticia con foto secundaria */
-.ultima_noticia_con_foto {
-	width: 30.008%;
-	display: inline-block;
-	margin-top: 5px;
-}
-
-.ultima_foto_noticia_con_foto {
-	width: 100%;
-	height: 38.7356%;
+.cont_noticia_secundaria {
+    width: 27%;
+    margin-left: 3%;
+    display: inline-block;
+    margin-top: 2%;
 }
 
 /* FORMATO NOTICIA */
